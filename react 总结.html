@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			//我们都知道React是单项数据流，父子之间属性传递用props 如下面例子所示：
+			/*class Button extends Component {
+			  render() {
+			    return (
+			      <button style={{background: this.props.color}}>
+			        {this.props.children}
+			      </button>
+			    );
+			  }
+			}
+			
+			class Message extends Component {
+			  render() {
+			    return (
+			      <div>
+			        {this.props.text} <Button color={this.props.color}>Delete</Button>
+			      </div>
+			    );
+			  }
+			}
+			
+			class MessageList extends Component {
+			  constructor(){
+			    super()
+			    this.state={
+			      message:{text:'第一条数据',num:'1'}
+			    }
+			  }
+			  render() {
+			    const color = "purple";
+			    const children = (<Message text={this.state.message.text} color={color} />)
+			
+			  
+			    return <div>{children}</div>;
+			  }
+			}*/
+			
+			
+//			如果组件数量较多，属性传递会比较麻烦，那么还有一种方法使用React的context
+//
+//			代码如下
+
+//			class Button extends Component {
+//			  render() {
+//			    return (
+//			      <button style={{background: this.context.color}}>
+//			        {this.props.children}
+//			      </button>
+//			    );
+//			  }
+//			}
+//			
+//			Button.contextTypes = {
+//			  color: React.PropTypes.string
+//			};
+//			
+//			class Message extends Component {
+//			  render() {
+//			    return (
+//			      <div>
+//			        {this.props.text} <Button>Delete</Button>
+//			      </div>
+//			    );
+//			  }
+//			}
+//			
+//			class MessageQHY extends Component{
+//			  getChildContext() {
+//			    return {color: "red"};
+//			  }
+//			  constructor(){
+//			    super()
+//			    this.state={
+//			      message:{text:'第一条数据',num:'1'}
+//			    }
+//			  }
+//			
+//			  render() {
+//			    const children = (<Message text={this.state.message.text} />)
+//			    return (<div>{children}</div>);
+//			  }
+//			}
+//			
+//			 MessageQHY.childContextTypes = {
+//			  color: React.PropTypes.string
+//			};
+
+		</script>
+	</body>
+</html>
