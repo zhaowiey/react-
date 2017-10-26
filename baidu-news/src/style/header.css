@@ -1,0 +1,75 @@
+@charset "utf-8";
+html {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+body {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+body,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+ul,
+li {
+  list-style: none;
+}
+body {
+  font-family: arial, helvetica, sans-serif;
+}
+html {
+  font-size: 0.35rem;
+}
+a {
+  display: block;
+  text-decoration: none;
+}
+.header {
+  width: 100%;
+  height: 1.95rem;
+  background: #3e98f0 url(../images/bg-news-logo_344ce44.png) no-repeat center;
+  background-size: 3rem 1.05rem;
+  border-bottom: 0.05rem solid #54a0e6;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+.left_box,
+.right_box {
+  width: 3.9rem;
+  height: 100%;
+}
+.left_box a,
+.right_box a {
+  width: 1.95rem;
+  height: 1.95rem;
+  float: left;
+}
+.left_box {
+  float: left;
+}
+.right_box {
+  float: right;
+}
+.left_box a:nth-of-type(1) {
+  background: url(../images/1.png) no-repeat center;
+  background-size: 0.75rem;
+}
+.left_box a:nth-of-type(2) {
+  background: url(../images/2.png) no-repeat center;
+  background-size: 0.75rem;
+}
+.right_box a:nth-of-type(1) {
+  background: url(../images/3.png) no-repeat center;
+  background-size: 0.75rem;
+}
+.right_box a:nth-of-type(2) {
+  background: url(../images/4.png) no-repeat center;
+  background-size: 0.75rem;
+}

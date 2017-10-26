@@ -1,0 +1,149 @@
+@charset "utf-8";
+html {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+body {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+body,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+ul,
+li {
+  list-style: none;
+}
+body {
+  font-family: arial, helvetica, sans-serif;
+}
+html {
+  font-size: 0.35rem;
+}
+a {
+  display: block;
+  text-decoration: none;
+}
+.manageHeader {
+  z-index: 2;
+  width: 100%;
+  height: 2rem;
+  background-color: #3e98f0;
+}
+.manageHeader a {
+  width: 2rem;
+  height: 2rem;
+  background: url(../images/link_01.png) no-repeat center;
+  float: left;
+  background-size: 0.525rem 0.9rem;
+}
+.manageHeader span {
+  font-size: 0.7rem;
+  display: block;
+  width: 12.5rem;
+  height: 2rem;
+  float: left;
+  text-align: center;
+  line-height: 2rem;
+  color: #fff;
+}
+.manageBody {
+  width: 95%;
+  margin: 0 auto;
+  height: auto;
+}
+.manageBody div {
+  position: relative;
+  width: 50%;
+  float: left;
+  height: 2rem;
+  line-height: 2rem;
+  color: #4f5256;
+  font-size: 0.75rem;
+  text-indent: 0.15rem;
+}
+.manageBody div span {
+  width: 0.7rem;
+  height: 0.7rem;
+  display: block;
+  position: absolute;
+  right: 0.2rem;
+  top: 0.65rem;
+}
+.manageBody div .bg1 {
+  background: url(../images/manage_1.png) no-repeat center;
+  background-size: 100% 100%;
+}
+.manageBody div .bg2 {
+  background: url(../images/manage_2.png) no-repeat center;
+  background-size: 100% 100%;
+}
+.manageBody:after {
+  content: ".";
+  clear: both;
+  display: block;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+.manageSearch {
+  margin: 0;
+  width: 95%;
+  margin: 0.25rem auto;
+  height: 2.3rem;
+  border: 0.075rem solid #ececec;
+  display: block;
+}
+.manageSearch span {
+  display: block;
+  height: 2.3rem;
+}
+.manageSearch .span1 {
+  width: 1.9rem;
+  float: left;
+  background: url(../images/manage_3.png) no-repeat center;
+  background-size: 0.9rem 1rem;
+}
+.manageSearch .span2 {
+  width: 13rem;
+  float: left;
+  line-height: 2.3rem;
+  color: #c0c2c7;
+  font-size: 0.8rem;
+}
+.govern {
+  width: 95%;
+  margin: 2.375rem auto 0;
+  height: 2rem;
+  background-color: #239bf0;
+}
+.govern a {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 2rem;
+  font-size: 0.75rem;
+  color: #fff;
+}
+.view2 {
+  width: 100%;
+  margin-left: 100%;
+}
+.viewshow2 {
+  width: 100%;
+  animation: view2 .3s linear;
+  margin-left: 0;
+}
+@keyframes view2 {
+  from {
+    margin-left: 100%;
+  }
+  to {
+    margin-left: 0;
+  }
+}

@@ -1,0 +1,140 @@
+@charset "utf-8";
+html {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+body {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+body,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+ul,
+li {
+  list-style: none;
+}
+body {
+  font-family: arial, helvetica, sans-serif;
+}
+html {
+  font-size: 0.7rem;
+}
+.nav {
+  width: 100%;
+  position: absolute;
+  margin-top: 2rem;
+  min-height: 1.5rem;
+  background-color: #3e98f0;
+  color: #b6d4f7;
+  overflow: hidden;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+i {
+  width: 1.5rem;
+  height: 2rem;
+  position: absolute;
+  margin-left: 0.25rem;
+  padding-right: 0.25rem;
+  right: 0;
+  top: 0;
+  z-index: 11;
+}
+.i1 {
+  background: #3e98f0 url(../images/i1.png) no-repeat center;
+}
+.i2 {
+  background: #3e98f0 url(../images/i2.png) no-repeat center;
+}
+.title {
+  height: 1.5rem;
+  border-bottom: 0.05rem solid #469cf0;
+  font-size: 0.6rem;
+  line-height: 1.5rem;
+  text-indent: 0.5rem;
+  background-color: #3e98f0;
+  z-index: 11;
+}
+ul {
+  transition: .1s;
+  border-bottom: 0.05rem solid #469cf0;
+  position: relative;
+  z-index: 1;
+  height: 100%;
+}
+ul:after {
+  content: ".";
+  clear: both;
+  display: block;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+.del {
+  height: 1.6rem;
+  width: 100%;
+  line-height: 1.6rem;
+  font-size: 0.6rem;
+  color: #fff;
+  text-align: center;
+  background-color: #3e98f0;
+  z-index: 11;
+}
+li {
+  height: 2rem;
+  float: left;
+  width: 4rem;
+  overflow: hidden;
+  transition: .4s;
+}
+li a {
+  height: 1.825rem;
+  width: auto;
+  margin: 0 0.75rem;
+  font-size: 0.65rem;
+  text-align: center;
+  line-height: 1.825rem;
+  border-bottom: 0.175rem solid transparent;
+  color: #fff;
+  transition: .4s;
+}
+.nav_b .title,
+.nav_b .del {
+  display: none;
+}
+.nav_b ul {
+  height: 2rem;
+  overflow: hidden;
+  width: 1500%;
+}
+.nav_b {
+  width: 100%;
+  position: absolute;
+  margin-top: 2rem;
+  min-height: 1.5rem;
+  background-color: #3e98f0;
+  color: #b6d4f7;
+  overflow: hidden;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+.nav ul {
+  background-color: #3e98f0;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+.selected {
+  color: #fff;
+  border-color: #fff;
+}

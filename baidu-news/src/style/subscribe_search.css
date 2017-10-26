@@ -1,0 +1,131 @@
+@charset "utf-8";
+html {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 111;
+}
+body {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  z-index: 11;
+}
+body,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+ul,
+li {
+  list-style: none;
+}
+body {
+  font-family: arial, helvetica, sans-serif;
+}
+html {
+  font-size: 0.35rem;
+}
+a {
+  display: block;
+  text-decoration: none;
+}
+.ssHeader {
+  z-index: 2;
+  width: 100%;
+  height: 2rem;
+  background-color: #3e98f0;
+  position: relative;
+}
+.ssHeader .goBack {
+  width: 2rem;
+  height: 2rem;
+  background: url(../images/link_01.png) no-repeat center;
+  float: left;
+  background-size: 0.525rem 0.9rem;
+}
+.ssHeader .title {
+  font-size: 0.7rem;
+  display: block;
+  width: 12.5rem;
+  height: 1.9rem;
+  float: left;
+  text-align: center;
+  line-height: 2rem;
+  color: #fff;
+}
+.ssHeader .done {
+  width: 3rem;
+  font-size: 0.7rem;
+  color: #fff;
+  display: block;
+  height: 2rem;
+  text-align: center;
+  line-height: 2rem;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.ssSearch {
+  padding: 0.25rem;
+  height: 1.8rem;
+}
+.ssSearch .ssCon {
+  width: 100%;
+  height: 90%;
+  border: 0.05rem solid #b8bac0;
+  margin-left: -0.05rem;
+  position: relative;
+}
+.ssSearch .ssCon span {
+  display: block;
+  width: 1.8rem;
+  height: 100%;
+  background: url(../images/manage_3.png) no-repeat center;
+  background-size: 0.9rem 1rem;
+}
+.ssSearch .ssCon input {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  left: 1.8rem;
+  top: 0;
+  width: 13.75rem;
+  height: 100%;
+  font-size: 0.7rem;
+}
+.searchW {
+  height: 2.3rem;
+  line-height: 2.3rem;
+  border-top: 0.5rem solid #f3f3f3;
+  border-bottom: 0.1rem solid #f3f3f3;
+  font-size: 0.75rem;
+  color: #3b4352;
+  text-indent: 0.5rem;
+}
+.searchList div {
+  width: 100%;
+  height: 2rem;
+  line-height: 2rem;
+  font-size: 0.65rem;
+  color: #3b4352;
+  border-bottom: 0.1rem solid #f3f3f3;
+  text-indent: 0.875rem;
+  position: relative;
+}
+.searchList div span {
+  display: block;
+  background: url(../images/search_1.png) no-repeat center;
+  background-size: 100% 100%;
+  width: 0.75rem;
+  height: 0.75rem;
+  position: absolute;
+  right: 0.4rem;
+  top: 0.625rem;
+}
+.searchList div .bg_2 {
+  background: url(../images/search_2.png) no-repeat center;
+  background-size: 100% 100%;
+}

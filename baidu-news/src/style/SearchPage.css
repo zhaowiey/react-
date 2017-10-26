@@ -1,0 +1,261 @@
+@charset "utf-8";
+html {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 111;
+}
+body {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  z-index: 11;
+}
+body,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+ul,
+li {
+  list-style: none;
+}
+body {
+  font-family: arial, helvetica, sans-serif;
+}
+html {
+  font-size: 0.35rem;
+}
+a {
+  display: block;
+  text-decoration: none;
+}
+.searchHeader {
+  z-index: 2;
+  width: 100%;
+  height: 2rem;
+  background-color: #3e98f0;
+}
+.searchHeader a {
+  width: 2rem;
+  height: 2rem;
+  background: url(../images/link_01.png) no-repeat center;
+  float: left;
+  background-size: 0.525rem 0.9rem;
+}
+.searchHeader span {
+  font-size: 0.7rem;
+  display: block;
+  width: 12.5rem;
+  height: 2rem;
+  float: left;
+  text-align: center;
+  line-height: 2rem;
+  color: #fff;
+}
+.searchBox_Box {
+  width: 100%;
+  z-index: 2;
+}
+.searchBox {
+  z-index: 2;
+  width: 13.7rem;
+  height: 1.75rem;
+  border: 0.075rem solid #ececec;
+  margin: 0.375rem auto;
+}
+.searchBox input {
+  width: 10.3rem;
+  height: 1.75rem;
+  border: none;
+  border-right: 0.05rem solid #ececec;
+  font-size: 0.7rem;
+  display: block;
+  float: left;
+}
+.searchBox span {
+  display: block;
+  width: 3.375rem;
+  height: 1.75rem;
+  float: right;
+  font-size: 0.7rem;
+  text-align: center;
+  line-height: 1.75rem;
+}
+.loading {
+  position: relative;
+  width: 100%;
+  height: 2rem;
+  margin-top: 40%;
+}
+.loading .loading_logo {
+  width: 6rem;
+  margin: 0 auto;
+  height: 100%;
+  background: url(../images/new-loading-logo.png) no-repeat center;
+  background-size: 100% 100%;
+}
+.loading .loading_anim {
+  width: 2.15rem;
+  height: 2rem;
+  position: absolute;
+  background-size: 100% 100%;
+  left: -2.5rem;
+  top: 0;
+  animation: loading_anim 1s linear infinite;
+  background: url(../images/new-loading-anim.png) no-repeat center;
+}
+.loading_hide {
+  display: none;
+}
+@keyframes loading_anim {
+  from {
+    left: -2.5rem;
+  }
+  to {
+    left: 9rem;
+  }
+}
+.view {
+  width: 100%;
+  margin-left: 100%;
+  height: 100%;
+}
+.viewshow {
+  height: 100%;
+  width: 100%;
+  animation: view .3s linear;
+  margin-left: 0;
+}
+@keyframes view {
+  from {
+    margin-left: 100%;
+  }
+  to {
+    margin-left: 0;
+  }
+}
+.newsBox {
+  z-index: 1;
+  margin-top: 0.5rem;
+}
+.result_num {
+  z-index: 2;
+  width: 100%;
+  margin-top: 0.25rem;
+  height: 0.8rem;
+  line-height: 0.8rem;
+  text-align: center;
+  font-size: 0.6rem;
+  color: #b3b9c1;
+  background-color: #fff;
+}
+.list {
+  width: 92%;
+  height: 4.2rem;
+  margin: 0.5rem auto;
+  position: relative;
+}
+.list a {
+  width: 100%;
+  height: 100%;
+}
+.list img {
+  display: block;
+  margin: 0;
+  height: 4.2rem;
+  width: 35%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.list .top {
+  width: 65%;
+  height: 3.45rem;
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 0.75rem;
+  line-height: 1.5rem;
+  color: #111;
+}
+.list .top span {
+  display: block;
+  height: 100%;
+  width: 90%;
+  float: right;
+  overflow: hidden;
+}
+.list .bottom {
+  width: 65%;
+  height: 0.75rem;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  font-size: 0.6rem;
+  line-height: 0.75rem;
+  color: #b3b9c1;
+  text-indent: 0.625rem;
+}
+.list .src {
+  color: orange;
+  float: right;
+  white-space: nowrap;
+  overflow: hidden;
+  opacity: .5;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.list2 {
+  position: relative;
+  width: 92%;
+  min-height: 3.75rem;
+  margin: 0.5rem auto;
+}
+.list2 a {
+  width: 100%;
+  height: 100%;
+}
+.list2 .top2 {
+  width: 100%;
+  font-size: 0.75rem;
+  line-height: 1.5rem;
+  min-height: 1.5rem;
+  color: #111;
+}
+.list2 .top2 span {
+  display: block;
+  width: 96%;
+  float: left;
+}
+.list2 .bottom2 {
+  width: 100%;
+  height: 0.75rem;
+  font-size: 0.6rem;
+  line-height: 0.75rem;
+  color: #b3b9c1;
+  text-indent: 0.375rem;
+}
+.list2 .src {
+  color: orange;
+  float: right;
+  white-space: nowrap;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  opacity: .5;
+}
+.goTop {
+  position: fixed;
+  width: 2.125rem;
+  height: 2.125rem;
+  background: url(../images/go-top_b1fff84.png) no-repeat center;
+  background-size: 100% 100%;
+  right: 0.65rem;
+  bottom: 6.6rem;
+  z-index: 999;
+  cursor: pointer;
+}
